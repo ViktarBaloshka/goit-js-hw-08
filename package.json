@@ -5,12 +5,12 @@
   "main": "index.js",
   "homepage": "https://viktarbaloshka.github.com/goit-js-hw-08/",
   "scripts": {
-    "dev": "parcel src/*.html",
+    "dev": "parcel src/*.html --port 5500",
     "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ViktarBaloshka/goit-js-hw-08.git"
+    "url": "git+https://github.com/ViktarBaloshka/goit-js-hw-08.git"
   },
   "keywords": [],
   "author": "Viktar Baloshka <vboloshko@gmail.com>",
