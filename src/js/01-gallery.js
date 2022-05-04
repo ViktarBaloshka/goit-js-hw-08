@@ -1,5 +1,10 @@
 import { galleryItems } from './gallery-items.js';
+
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 // Change code below this line
+
 const galleryContainer = document.querySelector('.gallery');
 const galleryMarkup = createListImages(galleryItems);
 
@@ -9,10 +14,10 @@ function createListImages(galleryItems) {
   return galleryItems
     .map(({ preview, original, description }) => {
       return `
-  <li> 
+  <li style="list-style: none"> 
     <a class="gallery__item" href="${original}">
         <img
-            style="display:block"
+            style="display:block" 
             class="gallery__image"
             src="${preview}" 
             alt="${description}"
